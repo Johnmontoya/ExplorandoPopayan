@@ -1,0 +1,132 @@
+
+.cont-logo{
+    height: 60px;
+    width: 5%;
+  
+}
+
+.cabezera{
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(20, 221, 54, 0.432);
+}
+
+.cont-titulo{
+    height: 60px;
+    width: 95%; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cont-titulo h3{
+    font-size: 10px;
+   
+   
+    
+}
+.titulo{
+    margin: auto;
+ 
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+   
+}
+.logo:hover{
+    cursor: pointer;
+   
+}
+.contenedor{
+   height:  250px;
+    width: 100%;
+    -webkit-perspective: 700;
+}
+.carta{
+   height:  250px;
+    width: 100%;
+position: relative;
+  transform-style: preserve-3d;
+   transition: 1s;
+   border-radius: 10px;
+}
+.carta:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+     
+}
+.lado{
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.frente{
+box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+    
+}
+
+.frente img{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+.frente span{
+  
+    display: block;
+    text-align: center;
+    
+}
+.atras{
+ 
+   transform: rotateY(180deg);
+   box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+   
+}
+.atras span{
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    background: rgba(52,161,56);
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 5px 0px rgba(0,0,0,0.5);
+     
+}
+.contenedor-descripcionuno, .contenedor-descripciondos, .contenedor-descripciontres, .contenedor-descripcioncuatro{
+    width:100%;
+    height: 150px;
+    overflow: hidden;
+   margin-top: 50px;
+  
+}
+.contenedor-descripcionvermas{
+    overflow: auto;
+}
+.contenedor-info{
+    
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.atras p{
+     text-align: center;
+}
+.desaparecevermas{
+    display: none !important;
+}
+@media(min-width:0px){
+    .titulo{font-size: 12px;}
+    
+}
+@media(min-width:575px){
+    .titulo{font-size: 30px;}
+    
+}

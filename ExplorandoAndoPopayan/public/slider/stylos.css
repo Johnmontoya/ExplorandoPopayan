@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slider{
+position: relative;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.derecha, .izquierda{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    top: 125px;
+     
+}
+.derecha, .izquierda:hover{
+    cursor: pointer;
+    
+}
+.izquierda{
+    left: 5px;
+}
+.derecha{
+    right: 5px;
+}
+
+.slider ul{
+   display: flex; 
+   width: 1000%;
+   animation: cambio 30s linear infinite;
+   
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+ 
+}
+.slider img{
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
+  
+}
+@keyframes cambio{
+    0%{margin-left:0}
+    5%{margin-left:0}
+        
+    10%{margin-left:-100%}
+    15%{margin-left:-100%}
+    
+    20%{margin-left:-200%}
+    25%{margin-left:-200%}
+
+    30%{margin-left:-300%}
+    35%{margin-left:-300%}
+
+    40%{margin-left:-400%}
+    45%{margin-left:-400%}
+
+    50%{margin-left:-500%}
+    55%{margin-left:-500%}
+
+    60%{margin-left:-600%}
+    65%{margin-left:-600%}
+
+    70%{margin-left:-700%}
+    75%{margin-left:-700%}
+
+    80%{margin-left:-800%}
+    85%{margin-left:-800%}
+
+    95%{margin-left:-900%}
+    100%{margin-left:-900%}
+
+
+}
